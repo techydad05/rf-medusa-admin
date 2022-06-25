@@ -548,11 +548,11 @@ const OrderDetails = ({ id }) => {
                   </div>
                   <div>
                     <h1 className="inter-large-semibold text-grey-90">
-                      {`${order?.shipping_address.first_name} ${order?.shipping_address.last_name}`}
+                      {/* {`${order?.shipping_address.first_name} ${order?.shipping_address.last_name}`} */}
                     </h1>
                     <span className="inter-small-regular text-grey-50">
-                      {order?.shipping_address.city},{" "}
-                      {order?.shipping_address.country_code}
+                      {/* {order?.shipping_address.city},{" "}
+                      {order?.shipping_address.country_code} */}
                     </span>
                   </div>
                 </div>
@@ -562,18 +562,18 @@ const OrderDetails = ({ id }) => {
                       Contact
                     </div>
                     <div className="flex flex-col inter-small-regular">
-                      <span>{order?.email}</span>
-                      <span>{order?.shipping_address?.phone || ""}</span>
+                      {/* <span>{order?.email}</span>
+                      <span>{order?.shipping_address?.phone || ""}</span> */}
                     </div>
                   </div>
-                  <FormattedAddress
+                  {/* <FormattedAddress
                     title={"Shipping"}
                     addr={order?.shipping_address}
-                  />
-                  <FormattedAddress
+                  /> */}
+                  {/* <FormattedAddress
                     title={"Billing"}
                     addr={order?.billing_address}
-                  />
+                  /> */}
                 </div>
               </div>
             </BodyCard>
