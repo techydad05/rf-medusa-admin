@@ -287,8 +287,7 @@ const OrderDetails = ({ id }) => {
 
   return (
     <div>
-      testies
-      {/* <Breadcrumb
+      <Breadcrumb
         currentPage={"Order Details"}
         previousBreadcrumb={"Orders"}
         previousRoute="/a/orders"
@@ -549,11 +548,11 @@ const OrderDetails = ({ id }) => {
                   </div>
                   <div>
                     <h1 className="inter-large-semibold text-grey-90">
-                      {`${order?.shipping_address.first_name} ${order?.shipping_address.last_name}`}
+                      {`${order?.shipping_address?.first_name} ${order?.shipping_address?.last_name}`}
                     </h1>
                     <span className="inter-small-regular text-grey-50">
-                      {order?.shipping_address.city},{" "}
-                      {order?.shipping_address.country_code}
+                      {order?.shipping_address?.city},{" "}
+                      {order?.shipping_address?.country_code}
                     </span>
                   </div>
                 </div>
@@ -621,7 +620,7 @@ const OrderDetails = ({ id }) => {
           fulfillment={fullfilmentToShip}
           orderId={order.id}
         />
-      )} */}
+      )}
     </div>
   )
 }
